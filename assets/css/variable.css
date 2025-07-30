@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Inter Regular';
+  src: url('../fonts/static/Inter-Regular.ttf');
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Inter SemiBold';
+  src: url('../fonts/static/Inter-SemiBold.ttf');
+  font-weight: 700;
+}
+
+:root {
+  /* Colors */
+  --rose-800: #7A284E;
+  --rose-50: #FFF7FB;
+  --stone-900: #312E2C;
+  --stone-600: #5F564D;
+  --stone-150: #E3DDD7;
+  --stone-100: #F3E5D7;
+  --brown-800: #854632;
+  --white: #FFFFFF;
+
+  /* Fonts */
+  --font-preset-1: 'Young Serif Regular', sans-serif;
+  --font-preset-2: 'Young Serif Regular', sans-serif;
+  --font-preset-3: 'Oufit SemiBold', sans-serif;
+  --font-preset-4: 'Oufit Regular', sans-serif;
+  --font-preset-4-bold: 'Oufit Bold', sans-serif;
+
+  /* Text Presets */
+  --text-size-preset-1: 14px;
+  --text-size-preset-2: 28px;
+  --text-size-preset-3: 20px;
+  --text-size-preset-4: 16px;
+
+  /* Spacing */
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-1600: 128p;
+
+  /* Border Radius */
+  --border-radius-50: 8px;
+  --border-radius-100: 12px;
+
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.text-preset-4-bold {
+  font-size: var(--font-preset-4);
+  font-family: var(--font-preset-4-bold);
+  letter-spacing: 0;
+  line-height: 150%;
+}
+
+.text-preset-4 {
+  font-size: var(--font-preset-4);
+  font-family: var(--font-preset-4);
+  letter-spacing: 0;
+  line-height: 150%;
+}
+
+.text-preset-3 {
+  font-size: var(--font-preset-3);
+  font-family: var(--font-preset-3);
+  letter-spacing: 0;
+  line-height: 100%;
+}
+
+.text-preset-2 {
+  font-size: var(--text-size-preset-2);
+  font-family: var(--font-preset-2);
+  letter-spacing: 0;
+  line-height: 150%;
+}
+
+.text-preset-1 {
+  font-size: var(--text-size-preset-1);
+  font-family: var(--font-preset-1);
+  letter-spacing: 0;
+  line-height: 100%;
+}
+
+.pt-150 {
+  padding-top: var(--spacing-150);
+}
