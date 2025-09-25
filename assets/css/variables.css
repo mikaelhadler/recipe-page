@@ -43,6 +43,7 @@
 
   /* Text Presets */
   --text-size-preset-1: 40px;
+  --text-size-preset-1-sm: 36px;
   --text-size-preset-2: 28px;
   --text-size-preset-3: 20px;
   --text-size-preset-4: 16px;
@@ -69,10 +70,15 @@ p {
 }
 
 .text-preset-1 {
-  font-size: var(--text-size-preset-1);
+  font-size: var(text-size-preset-1-sm);
   font-family: var(--font-preset-1);
   letter-spacing: 0;
   line-height: 100%;
+
+  @media screen and (min-width: 480px) {
+    font-size: var(--text-size-preset-1);
+    font-family: var(--font-preset-1);
+  }
 }
 
 .text-preset-2 {
@@ -83,21 +89,28 @@ p {
 }
 
 .text-preset-3 {
-  font-size: var(--font-preset-3);
+  font-size: var(--text-size-preset-3);
   font-family: var(--font-preset-3);
   letter-spacing: 0;
   line-height: 100%;
 }
 
+.text-preset-4-semi-bold {
+  font-size: var(--text-size-preset-4);
+  font-family: var(--font-preset-4-semi-bold);
+  letter-spacing: 0;
+  line-height: 150%;
+}
+
 .text-preset-4-bold {
-  font-size: var(--font-preset-4);
+  font-size: var(--text-size-preset-4);
   font-family: var(--font-preset-4-bold);
   letter-spacing: 0;
   line-height: 150%;
 }
 
 .text-preset-4 {
-  font-size: var(--font-preset-4);
+  font-size: var(--text-size-preset-4);
   font-family: var(--font-preset-4);
   letter-spacing: 0;
   line-height: 150%;
