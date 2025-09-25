@@ -1,13 +1,25 @@
 @font-face {
-  font-family: 'Inter Regular';
-  src: url('../fonts/static/Inter-Regular.ttf');
+  font-family: 'YoungSerif-Regular';
+  src: url('../fonts/static/YoungSerif-Regular.ttf');
   font-weight: 400;
   letter-spacing: 0;
 }
 
 @font-face {
-  font-family: 'Inter SemiBold';
-  src: url('../fonts/static/Inter-SemiBold.ttf');
+  font-family: 'Outfit-Regular';
+  src: url('../fonts/outfit/static/Outfit-Regular.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Outfit-SemiBold';
+  src: url('../fonts/outfit/static/Outfit-SemiBold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Outfit-Bold';
+  src: url('../fonts/outfit/static/Outfit-Bold.ttf');
   font-weight: 700;
 }
 
@@ -23,14 +35,14 @@
   --white: #FFFFFF;
 
   /* Fonts */
-  --font-preset-1: 'Young Serif Regular', sans-serif;
-  --font-preset-2: 'Young Serif Regular', sans-serif;
-  --font-preset-3: 'Oufit SemiBold', sans-serif;
-  --font-preset-4: 'Oufit Regular', sans-serif;
-  --font-preset-4-bold: 'Oufit Bold', sans-serif;
+  --font-preset-1: 'YoungSerif-Regular', sans-serif;
+  --font-preset-2: 'YoungSerif-Regular', sans-serif;
+  --font-preset-3: 'Oufit-SemiBold', sans-serif;
+  --font-preset-4: 'Oufit-Regular', sans-serif;
+  --font-preset-4-bold: 'Oufit-Bold', sans-serif;
 
   /* Text Presets */
-  --text-size-preset-1: 14px;
+  --text-size-preset-1: 40px;
   --text-size-preset-2: 28px;
   --text-size-preset-3: 20px;
   --text-size-preset-4: 16px;
@@ -43,17 +55,38 @@
   --spacing-400: 32px;
   --spacing-500: 40px;
   --spacing-600: 48px;
-  --spacing-1600: 128p;
+  --spacing-1600: 128px;
 
   /* Border Radius */
   --border-radius-50: 8px;
   --border-radius-100: 12px;
-
+  --border-radius-200: 24px;
 }
 
 p {
   margin: 0;
   padding: 0;
+}
+
+.text-preset-1 {
+  font-size: var(--text-size-preset-1);
+  font-family: var(--font-preset-1);
+  letter-spacing: 0;
+  line-height: 100%;
+}
+
+.text-preset-2 {
+  font-size: var(--text-size-preset-2);
+  font-family: var(--font-preset-2);
+  letter-spacing: 0;
+  line-height: 150%;
+}
+
+.text-preset-3 {
+  font-size: var(--font-preset-3);
+  font-family: var(--font-preset-3);
+  letter-spacing: 0;
+  line-height: 100%;
 }
 
 .text-preset-4-bold {
@@ -68,27 +101,6 @@ p {
   font-family: var(--font-preset-4);
   letter-spacing: 0;
   line-height: 150%;
-}
-
-.text-preset-3 {
-  font-size: var(--font-preset-3);
-  font-family: var(--font-preset-3);
-  letter-spacing: 0;
-  line-height: 100%;
-}
-
-.text-preset-2 {
-  font-size: var(--text-size-preset-2);
-  font-family: var(--font-preset-2);
-  letter-spacing: 0;
-  line-height: 150%;
-}
-
-.text-preset-1 {
-  font-size: var(--text-size-preset-1);
-  font-family: var(--font-preset-1);
-  letter-spacing: 0;
-  line-height: 100%;
 }
 
 .pt-150 {
